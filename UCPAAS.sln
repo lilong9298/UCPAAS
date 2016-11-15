@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CE66FBEF-D6C7-41F6-A524-6D903E9686B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB19B68C-B671-480C-B859-38027AED4782}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UCPAAS", "src\UCPAAS\UCPAAS.xproj", "{E4DDA83A-05A8-46B5-9A78-E8673246F8AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{96F582C8-CCEB-42CC-B162-6DAA0DD43665}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UCPAAS.Test", "test\UCPAAS.Test\UCPAAS.Test.xproj", "{5143D57F-0112-4F43-BBFE-1787F3E395BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4DDA83A-05A8-46B5-9A78-E8673246F8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DDA83A-05A8-46B5-9A78-E8673246F8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DDA83A-05A8-46B5-9A78-E8673246F8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DDA83A-05A8-46B5-9A78-E8673246F8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5143D57F-0112-4F43-BBFE-1787F3E395BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5143D57F-0112-4F43-BBFE-1787F3E395BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5143D57F-0112-4F43-BBFE-1787F3E395BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5143D57F-0112-4F43-BBFE-1787F3E395BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4DDA83A-05A8-46B5-9A78-E8673246F8AC} = {CE66FBEF-D6C7-41F6-A524-6D903E9686B5}
+		{5143D57F-0112-4F43-BBFE-1787F3E395BB} = {96F582C8-CCEB-42CC-B162-6DAA0DD43665}
+	EndGlobalSection
+EndGlobal
