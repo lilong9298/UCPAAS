@@ -28,8 +28,9 @@ namespace UCPAAS.Internal
             var functionmodel = _dataProvider.GetFunctionModel(functionNumber);
             var interopServices = new InteropServices(functionmodel.Url);
             var functionname = string.Format(functionmodel.Name, ucpaasSetting.AccountSid, ucpaasSetting.SigParameterValue);
+            await _dataProvider.SaveRequest(functionname, _callId);
             var result =await interopServices.HttpsPostAsync<ApplyUCPAAS, ApplyResult>(ucpaasSetting, functionname, model);
-
+            await _dataProvider.SaveResponse(result, _callId);
             return result;
         }
 
@@ -39,7 +40,9 @@ namespace UCPAAS.Internal
             var functionmodel = _dataProvider.GetFunctionModel(functionNumber);
             var interopServices = new InteropServices(functionmodel.Url);
             var functionname = string.Format(functionmodel.Name, ucpaasSetting.AccountSid, ucpaasSetting.SigParameterValue);
+            await _dataProvider.SaveRequest(model, _callId);
             var result = await interopServices.HttpsPostAsync<CallBackUCPAAS, CallBackResult>(ucpaasSetting, functionname, model);
+            await _dataProvider.SaveResponse(result, _callId);
             return result;
         }
 
@@ -49,7 +52,9 @@ namespace UCPAAS.Internal
             var functionmodel = _dataProvider.GetFunctionModel(functionNumber);
             var interopServices = new InteropServices(functionmodel.Url);
             var functionname = string.Format(functionmodel.Name, ucpaasSetting.AccountSid,ucpaasSetting.SigParameterValue,phone,_dataProvider.AppId());
+            await _dataProvider.SaveRequest(functionname, _callId);
             var result = await interopServices.HttpsGetAsync<ClientDetailResult>(ucpaasSetting, functionname);
+            await _dataProvider.SaveResponse(result, _callId);
 
             return result;
         }

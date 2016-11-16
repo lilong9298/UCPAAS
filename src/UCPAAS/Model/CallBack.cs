@@ -8,12 +8,12 @@ namespace UCPAAS.Model {
 
     public class CallBack : Model {
         public string fromClient { get; set; }
-
+        public string fromSerNum { get; set; }
         public string to { get; set; }
-
+        public string toSerNum { get; set; }
         public int maxallowtime { get; set; }
-
         public string userData { get; set; }
+        public string ringtoneID { get; set; }
     }
 
     public class CallBackUCPAAS {

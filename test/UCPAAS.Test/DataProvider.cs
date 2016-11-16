@@ -30,5 +30,13 @@ namespace UCPAAS.Test {
                     return new Function() { Url = "https://api.ucpaas.com/", Name = "2014-06-30/Accounts/{0}/ClientsByMobile?sig={1}" };
             }
         }
+
+        public async Task SaveRequest(object model, Guid callid) {
+            Console.Write(Newtonsoft.Json.JsonConvert.SerializeObject(model));
+        }
+
+        public async Task SaveResponse(object model, Guid callid) {
+            Console.Write(Newtonsoft.Json.JsonConvert.SerializeObject(model));
+        }
     }
 }
