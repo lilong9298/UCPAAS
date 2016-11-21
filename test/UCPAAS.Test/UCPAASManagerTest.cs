@@ -25,7 +25,7 @@ namespace UCPAAS.Test {
         [Fact]
         public async Task FindAccount() {
             var manger = new UCPAASManager(new DataProvider());
-            var rlt = await manger.ClientDetailAsync("FindClient", "13410496189");
+            var rlt = await manger.ClientDetailAsync("FindClient", "18679236954");
             Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(rlt));
             Assert.True(rlt.resp.IsSucceedCode);
         }
@@ -35,11 +35,11 @@ namespace UCPAAS.Test {
             var manger = new UCPAASManager(new DataProvider());
             var rlt = await manger.CallBackAsync("CallBack", new Model.CallBackUCPAAS {
                 callback = new Model.CallBack {
-                    fromClient = "65168070797793",
+                    fromClient = "65168072243106",
                     fromSerNum = "057156103644",
-                    to = "13783783183",
-                    toSerNum = "18679236954",
-                    maxallowtime = 60,
+                    to = "18679326954",
+                    toSerNum = "057156103644",
+                    maxallowtime = 3600,
                     userData = "cs123"
                 }
             });
