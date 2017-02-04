@@ -2588,7 +2588,7 @@
           "lib/netstandard1.1/xunit.runner.utility.dotnet.dll": {}
         }
       },
-      "UCPAAS/1.0.0": {
+      "UCPAAS/1.0.5": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
@@ -7620,7 +7620,7 @@
         "xunit.runner.utility.nuspec"
       ]
     },
-    "UCPAAS/1.0.0": {
+    "UCPAAS/1.0.5": {
       "type": "project",
       "path": "../../src/UCPAAS/project.json",
       "msbuildProject": "../../src/UCPAAS/UCPAAS.xproj"

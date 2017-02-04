@@ -12,7 +12,7 @@ namespace UCPAAS.Test {
             var manger = new UCPAASManager(new DataProvider());
             var rlt = await manger.ApplyClientAsync("Apply", new Model.ApplyUCPAAS {
                 client = new Model.Apply {
-                    mobile = "18603019077",
+                    mobile = "18679236954",
                     clientType = "0",
                     charge = "0",
                     friendlyName = string.Empty
@@ -35,12 +35,13 @@ namespace UCPAAS.Test {
             var manger = new UCPAASManager(new DataProvider());
             var rlt = await manger.CallBackAsync("CallBack", new Model.CallBackUCPAAS {
                 callback = new Model.CallBack {
-                    fromClient = "65168072243106",
-                    fromSerNum = "057156103644",
-                    to = "18679326954",
-                    toSerNum = "057156103644",
+                    fromClient = "65168073890888",
+                    fromSerNum = "057156103642",
+                    to = "13783783183",
+                    toSerNum = "057156103642",
                     maxallowtime = 3600,
-                    userData = "cs123"
+                    userData = "cs123",
+                    ringtoneID= "1753"
                 }
             });
             Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(rlt));

@@ -11,6 +11,14 @@ namespace UCPAAS.Model {
 
         public string AccountSid { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string FromSerNum { get; set; }
+
+        /// <summary>
+        /// 铃声ID
+        /// </summary>
+        public string RingtoneID { get; set; }
     }
 }
